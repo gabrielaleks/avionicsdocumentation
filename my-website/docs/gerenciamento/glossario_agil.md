@@ -41,8 +41,8 @@ O planejamento do sprint é o evento que marca o início do sprint. Nele são de
 
 Para um sprint eficiente é importante que o backlog esteja organizado e atualizado, portanto o grooming é um evento importante que deve ser feito antes do início do próximo sprint.
 
-### Grooming (refinamento) do backlog
-No dia do grooming o Product Owner e o restante do time revisam o backlog para garantir que ele está bem organizado, com os itens na prioridade correta e já bem pontuados. Nosso grooming acontece toda **sexta, 17h**.
-
 ### Retrospectiva do sprint
 Nesse dia a equipe reflete sobre o sprint passado para poder melhorar no futuro. O time pensa em como ser mais efetivo, quais comportamentos são positivos e negativos para o desenvolvimento do projeto e conversa sobre quais ajustes podem ser feitos. Nossas retrospectivas são feitas nas **quintas, 17h**.
+
+### Grooming (refinamento) do backlog
+No dia do grooming o Product Owner e o restante do time revisam o backlog para garantir que ele está bem organizado, com os itens na prioridade correta e já bem pontuados. Nosso grooming acontece toda **quinta, após o término da retrospectiva**.
