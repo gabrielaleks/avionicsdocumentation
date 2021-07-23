@@ -26,5 +26,5 @@ Atividades:
 Deve durar até uma hora.
 Atividades:
 1. Checar se há novas tarefas a serem adicionadas ao backlog.
-2. Organizar backlog, colocando no topo as tarefas com maior prioridade.
+2. Organizar backlog, colocando no topo as tarefas de maior prioridade.
 3. Estimar tarefas com pontos de história.
