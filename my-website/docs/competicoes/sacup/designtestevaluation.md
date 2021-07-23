@@ -6,7 +6,7 @@ sidebar_label: Design, Test & Evaluation Guide
 
 *Escrito por Matheus Parracho*
 
-Esse texto é um resumo da sessão de "[Design, Test & Evaluation Guide](https://www.soundingrocket.org/uploads/9/0/6/4/9064598/sa_cup_irec-design_test___evaluation_guide-v1.0-2021.pdf)", que define os critérios de design, teste e validação para a SA Cup.
+Esse texto é um resumo da sessão de [Design, Test & Evaluation Guide](https://www.soundingrocket.org/uploads/9/0/6/4/9064598/sa_cup_irec-design_test___evaluation_guide-v1.0-2021.pdf), que define os critérios de design, teste e validação para a SA Cup.
 
 ## Introdução e Pressupostos
 Spaceport America Cup (SA Cup) são uma série de eventos, estes que duram 1 semana, responsáveis por possibilitar a estrutura e o contexto responsável pela maior competição de engenharia de foguetes do planeta. O evento é apoiado pela Experimental Sounding Rocket Association (ESRA) e New Mexico Spaceport Authority (NMSA).
@@ -15,7 +15,7 @@ O clima da competição de fato motiva estudantes a seguir carreira na área de 
 
 Proposta e escopo - O documento define o design mínimo, teste e critérios de validação para promover um voo seguro. O lançamento fora dos padrões desse documento serão penalizados.
 
-Convenções e Notação do documento oficial- 
+Convenções e Notação do documento oficial: 
 
 - "Shall": Requerimento mandatório.
 - "Should": Requerimento não mandatório.
@@ -63,7 +63,7 @@ Range de frequência de 900MHz não necessita de licença HAM.
 
 ### Sistemas de foguete GPS em vários estágios
  As equipes com vários estágios ou implantáveis ​​são incentivados a
-use as unidades de GPS Big Red Bee 70cm em cada um dos estágios do foguete e / ou implantáveis.
+use as unidades de GPS Big Red Bee 70cm em cada um dos estágios do foguete e/ou implantáveis.
 
 
 ### Suporte APRS 
@@ -130,7 +130,7 @@ Verificar página 13 a 46 do documento oficial.
 
 ### Arme do Circuito de Ignição de Partida à Terra
 Ignição de todo o sistema de propulsão iniciado à terra
-circuitos / sequências não devem ser "armados" até que todo o pessoal esteja a pelo menos 50 pés (15 m) de distância
+circuitos/sequências não devem ser "armados" até que todo o pessoal esteja a pelo menos 50 pés (15 m) de distância
 o veículo de lançamento.
 
 
@@ -138,7 +138,7 @@ o veículo de lançamento.
 sequência remota “Pad HOT” iniciada a partir do LCO.
 
 
-### Arme do circuito de ignição por estágio / partida a ar 
+### Arme do circuito de ignição por estágio/partida a ar 
 Todos os sistemas de propulsão de estágio superior (ou seja, partidas a ar)
 deve ser projetado para evitar a ignição do motor durante a armação no solo, inibir a ignição do motor
 no caso de um vôo não nominal, e ser capaz de ser desarmado caso o foguete seja
@@ -151,7 +151,7 @@ implementar um meio para ventilação ou descarga controlada remotamente de todo
 propelentes em caso de abortamento do lançamento.
 
 
-### Eletrônica do circuito de ignição por estágio / partida a ar 
+### Eletrônica do circuito de ignição por estágio/partida a ar 
 Todos os sistemas de ignição de estágio superior devem estar em conformidade com
 os mesmos requisitos e objetivos para “fiação crítica de segurança” dos sistemas de recuperação.
 
@@ -164,14 +164,14 @@ acendeu na plataforma (ou seja, o foguete deve ser capaz de voar com segurança 
 luzes de motores).
 
 
-### Requisitos do computador para a ignição por estágio / partida a ar 
+### Requisitos do computador para a ignição por estágio/partida a ar 
 A ignição dos motores air-start deve ser
 realizado usando um computador de vôo COTS que tem a capacidade de realizar um "check de altitude" que pode inibir a ignição da partida abaixo de uma altitude pré-selecionada.
 
 Os atuais aprovados estão no documento oficial.
 
 
-### Voos Air-Start / Staged
+### Voos Air-Start/Staged
 Todos os projetos devem ter disposições capazes de
 impedir a ignição do motor de partida a ar no solo.
 
@@ -220,7 +220,7 @@ teste de carregamento e descarregamento do propelente em "configuração de lan�
 
 ### Teste estático
 Os sistemas de propulsão SRAD devem ser bem-sucedidos (sem
-anomalias com pressão e / ou empuxo da câmara) no teste estático de fogo quente antes do IREC.
+anomalias com pressão e/ou empuxo da câmara) no teste estático de fogo quente antes do IREC.
 
 - As equipes SRAD Solid devem fornecer um arquivo BurnSim de seu motor SRAD pretendido
 junto com dados de teste estático e que inclui um gráfico de pressão e empuxo
@@ -249,7 +249,7 @@ evento de implantação em uma altitude muito mais baixa.
 
 - Corpos recuperados de forma independente (cargas úteis), cujo apogeu não deve ultrapassar
 AGL de 1.500 pés (457 m) estão isentos de implantação dupla e podem apresentar apenas um
-evento de implantação único / principal.
+evento de implantação único/principal.
 
 - O Jolly Logic Chute Release (JLCR) NÃO é considerado "eletrônicos redundantes"
 e não será permitido o uso para qualquer pára-quedas principal com mais de 48 ”de diâmetro.
@@ -271,7 +271,7 @@ evento de implantação principal bem-sucedido, mas não tanto a ponto de exacer
 
 O evento de implantação principal deve ocorrer em uma altitude não
 superior a 1.500 pés (457 m) AGL e reduzir a taxa de descida do veículo o suficiente para
-evitar danos excessivos no impacto com o solo (<30 pés / s ou 9 m / s).
+evitar danos excessivos no impacto com o solo (<30 pés/s ou 9 m/s).
 
 - Nota importante - O Jolly Logic Chute Release (JLCR) NÃO é considerado
 "Eletrônica redundante" e não será permitida a utilização para qualquer pára-quedas principal ou
@@ -286,7 +286,7 @@ componentes vitais conforme as demandas de design específico.
 ### Links giratórios de paraquedas 
 O aparelhamento do sistema de recuperação (por exemplo, cabos de pára-quedas, risers, choque
 cordas, etc ...) devem implementar links giratórios adequadamente classificados nas conexões para aliviar
-torção / torção conforme as demandas específicas do projeto.
+torção/torção conforme as demandas específicas do projeto.
 
 - Isso irá mitigar o risco de cargas de torque desenroscar conexões aparafusadas durante
 recuperação
@@ -303,7 +303,7 @@ outra rampa.
 com ótica de alta potência.
 
 
-### Sistemas de recuperação sem paraquedas / Parafoil
+### Sistemas de recuperação sem paraquedas/Parafoil
 Equipes explorando outros (ou seja, sem pára-quedas
 ou baseados em parafina) os métodos de recuperação devem notificar a ESRA das suas intenções o mais rapidamente
 possível oportunidade e manter a ESRA informada da situação à medida que o seu trabalho progride.
@@ -316,7 +316,7 @@ a recuperação pode ser possível sair da área de recuperação
 
 ### Eletrônica redundante
 Os veículos lançadores devem implementar totalmente independentes e
-sistemas de recuperação redundantes para incluir: interruptor de armar, sensores / computadores de vôo, energia
+sistemas de recuperação redundantes para incluir: interruptor de armar, sensores/computadores de vôo, energia
 fornecimento, energética e "iniciadores elétricos".
 
 - Pelo menos um dos sistemas deve incluir um computador de vôo COTS.
@@ -377,16 +377,16 @@ siga as diretrizes de fiação de segurança crítica descritas no Apêndice B d
 ### Gerenciamento de cabos 
 Toda a fiação crítica de segurança deve implementar um gerenciamento de cabos
 solução (por exemplo, abraçadeiras, fiação, chicotes, canais de cabos) que evitará o emaranhamento
-e movimento livre excessivo de comprimentos significativos de fiação / cabo devido ao lançamento esperado
+e movimento livre excessivo de comprimentos significativos de fiação/cabo devido ao lançamento esperado
 carrega.
 
 - Este requisito não se destina a negar a pequena quantidade de folga necessária em tudo
-conexões / terminais para evitar desacoplamento não intencional devido às cargas de lançamento esperadas
-transferidos para fiação / cabos em interfaces físicas.
+conexões/terminais para evitar desacoplamento não intencional devido às cargas de lançamento esperadas
+transferidos para fiação/cabos em interfaces físicas.
 
 
 ### Conexões de fiação seguras 
-Todas as conexões críticas de fiação / cabo devem ser
+Todas as conexões críticas de fiação/cabo devem ser
 suficientemente seguro para evitar a desconexão devido às cargas de lançamento esperadas.
 
 - Isso será avaliado por um "teste de tração", em que a conexão é suave, mas firme
@@ -437,7 +437,7 @@ reforço substituto pode ser usado).
 
 ### Funcionalidade de controle restrito 
 Os sistemas de controle de vôo ativo do veículo lançador devem ser
-opcionalmente implementado estritamente para aumento de estabilidade de inclinação e / ou rotação, ou para
+opcionalmente implementado estritamente para aumento de estabilidade de inclinação e/ou rotação, ou para
 "travagem" aerodinâmica.
 
 - Sob nenhuma circunstância um veículo de lançamento inscrito no IREC será guiado ativamente
@@ -520,77 +520,57 @@ terminal. Use um fio menor para essa finalidade.
 - O fio deve ser descascado apenas com uma ferramenta para descascar fio do calibre correto. Quaisquer fios cortados
 deve ser motivo de rejeição.
 
-- Cada extremidade de um fio deve ser terminada em um dos seguintes métodos aprovados, com
-exceções nos parágrafos 4 e 5 abaixo:
+- Cada extremidade de um fio deve ser terminada em um dos seguintes métodos aprovados, com exceções nos parágrafos 4 e 5 abaixo:
 
-    - Crimpado em um terminal crimpado (de preferência). Isso inclui terminais de crimpagem em
-conectores multicondutores, como conectores D-sub de 9 pinos (consulte a tabela abaixo).
+    - Crimpado em um terminal crimpado (de preferência). Isso inclui terminais de crimpagem em conectores multicondutores, como conectores D-sub de 9 pinos (consulte a tabela abaixo).
 
     - Aparafusado em um terminal de parafuso de ligação (aceitável).
 
     - Os fios devem ser terminados em um bloco de terminais, apenas se for um pedaço de prateleira equipamento (ou seja, um altímetro) possui blocos de terminais integrados e, portanto, não há outra escolha.
+
 Os blocos de terminais de duas peças devem ser fixados positivamente juntos - o ajuste por fricção é
 insuficiente.
 
-- Os fios devem ser terminados por solda, apenas se for um equipamento de prateleira (ou seja, um
-chave de arme) possui terminais de solda embutidos e, portanto, não há outra escolha.
+- Os fios devem ser terminados por solda, apenas se for um equipamento de prateleira (ou seja, um chave de arme) possui terminais de solda embutidos e, portanto, não há outra escolha.
 
 - A confiabilidade das juntas de solda não pode ser estabelecida apenas pela inspeção visual.
 
-- Todas as operações de crimpagem devem ser realizadas com as ferramentas corretas, usando terminais de crimpagem dimensionados
-para a bitola de fio apropriada.
+- Todas as operações de crimpagem devem ser realizadas com as ferramentas corretas, usando terminais de crimpagem dimensionados para a bitola de fio apropriada.
 
-- Onde vários fios são crimpados em um único terminal, calcule a bitola efetiva (para
-exemplo, dois 22 AWG são efetivamente 19 AWG).
+- Onde vários fios são crimpados em um único terminal, calcule a bitola efetiva (para exemplo, dois 22 AWG são efetivamente 19 AWG).
 
-- Terminais com luvas de plástico isoladas (geralmente codificados por cores para indicar o tamanho do cilindro) não devem
-ser frisados.
+- Terminais com luvas de plástico isoladas (geralmente codificados por cores para indicar o tamanho do cilindro) não devem ser frisados.
 
-- Se um terminal for fornecido com uma luva de plástico isolada, ela deve ser removida antes do uso. Isto
-pode ser necessário ajustar a ferramenta de crimpagem para obter um aperto mais apertado.
+- Se um terminal for fornecido com uma luva de plástico isolada, ela deve ser removida antes do uso. Isto pode ser necessário ajustar a ferramenta de crimpagem para obter um aperto mais apertado.
 
 - A qualidade de crimpagem dos terminais isolados é difícil de inspecionar.
 
-- Normalmente não há necessidade de isolamento quando os terminais são montados corretamente em blocos de barreira.
-Se for necessário isolamento, adicione tubulação termorretrátil transparente.
+- Normalmente não há necessidade de isolamento quando os terminais são montados corretamente em blocos de barreira. Se for necessário isolamento, adicione tubulação termorretrátil transparente.
 
-- Quando um fio desencapado é mantido pressionado por um terminal de parafuso de ligação, o fio deve fazer um ângulo de 180 graus
-gancho, e os fios devem ser visíveis saindo da cabeça do parafuso. Apenas um fio deve ser permitido por
-parafuso.
+- Quando um fio desencapado é mantido pressionado por um terminal de parafuso de ligação, o fio deve fazer um ângulo de 180 graus gancho, e os fios devem ser visíveis saindo da cabeça do parafuso. Apenas um fio deve ser permitido por parafuso.
 
 - A curva do fio deve ser no sentido horário, para que aperte quando o parafuso for apertado.
 
-- Quando os terminais de anel ou espada são pressionados por terminais de parafuso de ligação, um máximo de dois
-terminais são permitidos por parafuso.
+- Quando os terminais de anel ou espada são pressionados por terminais de parafuso de ligação, um máximo de dois terminais são permitidos por parafuso.
 
-- No máximo três fios devem ser cravados em um único cilindro de terminal. Terminais de união de topo
-são considerados como tendo barris separados em cada extremidade.
+- No máximo três fios devem ser cravados em um único cilindro de terminal. Terminais de união de topo são considerados como tendo barris separados em cada extremidade.
 
 - Se dois ou mais fios devem ser unidos, um dos seguintes métodos aprovados deve ser usado:
+    - Prenda um terminal em anel em cada fio e, em seguida, parafuse-os em um bloco de barreira. Adicionar peças de jumper de bloco de barreira aprovadas se muitos fios devem ser unidos.
+    - Aparafuse os fios desencapados sob os parafusos de cabeça de ligação em um bloco de barreira. Adicionar barreira aprovada bloqueie as peças do jumper se muitos fios precisarem ser unidos.
+    - Crimpe os fios em um terminal de emenda de topo não isolado e, em seguida, isole com tubos termorretráteis.
+    - Qualquer método de emenda com torção de arame (incluindo porcas de arame) é expressamente proibido. Esqueço tudo o que você sabe sobre fiação doméstica. Casas não veem vibração de lançamento!
 
-    - Prenda um terminal em anel em cada fio e, em seguida, parafuse-os em um bloco de barreira. Adicionar
-peças de jumper de bloco de barreira aprovadas se muitos fios devem ser unidos.
-    - Aparafuse os fios desencapados sob os parafusos de cabeça de ligação em um bloco de barreira. Adicionar barreira aprovada
-bloqueie as peças do jumper se muitos fios precisarem ser unidos.
-    - Crimpe os fios em um terminal de emenda de topo não isolado e, em seguida, isole com
-tubos termorretráteis.
-    - Qualquer método de emenda com torção de arame (incluindo porcas de arame) é expressamente proibido. Esqueço
-tudo o que você sabe sobre fiação doméstica. Casas não veem vibração de lançamento!
-
-- Todos os tubos isolantes (geralmente termorretráteis) devem ser transparentes. Isso permite a inspeção do
-hardware subjacente.
+- Todos os tubos isolantes (geralmente termorretráteis) devem ser transparentes. Isso permite a inspeção do hardware subjacente.
 
 - Nenhuma fita, cola ou RTV deve ser usado para isolar ou amarrar qualquer elemento do chicote de fios.
 
 - As seguintes regras se aplicam aos conectores:
     - Devem usar contatos crimpados, pois a soldagem é proibida.
-    - Eles devem usar um mecanismo de travamento positivo para manter as duas metades acopladas sob
-vibração e tensão. O ajuste por fricção sozinho não é aceitável.
-    - Travas de conector de plástico não devem ser usadas (como as encontradas em automóveis
-aplicações), mas os conectores circulares com porcas de acoplamento de plástico são aceitáveis.
+    - Eles devem usar um mecanismo de travamento positivo para manter as duas metades acopladas sob vibração e tensão. O ajuste por fricção sozinho não é aceitável.
+    - Travas de conector de plástico não devem ser usadas (como as encontradas em automóveis aplicações), mas os conectores circulares com porcas de acoplamento de plástico são aceitáveis.
 
-- Fios individuais devem ser agrupados para fazer um chicote (fiação multicondutor de fábrica
-em uma jaqueta externa comum também é aceitável).
+- Fios individuais devem ser agrupados para fazer um chicote (fiação multicondutor de fábrica em uma jaqueta externa comum também é aceitável).
 
 - O arnês de segurança crítica deve ser mantido separado do arnês de carga útil (se houver).
 
@@ -600,50 +580,43 @@ em uma jaqueta externa comum também é aceitável).
     - Comprimentos curtos (1 cm) de tubo transparente termorretrátil ou zíper a cada 5 cm.
     - Manga de malha de arame, desde que permita a inspeção da fiação interna.
 
-- O arnês deve ser apoiado por grampos P de plástico. Não deve ser permitido tocar em qualquer
-borda afiada ou rosca de parafuso.
+- O arnês deve ser apoiado por grampos P de plástico. Não deve ser permitido tocar em qualquer borda afiada ou rosca de parafuso.
 
-- Todos os itens que são conectados pelo arnês (blocos de barreira, sensores, baterias, atuadores,
-interruptores, etc.) devem ser rigidamente fixados à estrutura do foguete para que não possam se mover.
+- Todos os itens que são conectados pelo arnês (blocos de barreira, sensores, baterias, atuadores, interruptores, etc.) devem ser rigidamente fixados à estrutura do foguete para que não possam se mover.
 
-- A fixação rígida implica a fixação com fixadores roscados ou cola sólida. Braçadeiras e / ou
-fitas não são exemplos aceitáveis ​​de fixação rígida.
+- A fixação rígida implica a fixação com fixadores roscados ou cola sólida. Braçadeiras e/ou fitas não são exemplos aceitáveis ​​de fixação rígida.
 
-- Nenhum fio deve ser apertado. Todo fio deve ter alguma folga, demonstrada por uma curva em seu
-terminação.
+- Nenhum fio deve ser apertado. Todo fio deve ter alguma folga, demonstrada por uma curva em seu terminação.
 
 - As baterias devem ser conectadas de forma adequada:
-    - Baterias de transistor de 9 V devem ser presas em clipes e conectadas usando o encaixe adequado
-terminais.
-    - Baterias de célula de gel devem ser presas com grampos e conectadas usando crimpagem “faston”
-terminais.
+    - Baterias de transistor de 9 V devem ser presas em clipes e conectadas usando o encaixe adequado terminais.
+    - Baterias de célula de gel devem ser presas com grampos e conectadas usando crimpagem “faston” terminais.
     - Pilhas cilíndricas (AAA, AA, C, D, etc) devem ser montadas em suportes comerciais.
 
-Os suportes devem ser fixados rigidamente à estrutura, e as baterias devem ser
-amarrado nos suportes.
+Os suportes devem ser fixados rigidamente à estrutura, e as baterias devem ser amarrado nos suportes.
 
 ### Peças Recomendadas
 
-|                   Peça                   |                             Numero                             |   |   |
-|:----------------------------------------:|:--------------------------------------------------------------:|:-:|:-:|
-|                    Fio                   |                      Digikey A5855W-100-ND                     |   |   |
-|                    Fio                   |                      Digikey C2016L-100-ND                     |   |   |
-|                    Fio                   |                   Digikey W120-100-ND Digikey                  |   |   |
-| Fio                                      | Amazon “Tinned marine grade wire"                              |   |   |
-| Anel de terminais                        | Digikey A27021-ND (#6 hole)                                    |   |   |
-| Terminal                                 | Digikey A09012-ND                                              |   |   |
-| “Faston” terminal                        | Digikey 298-10011-ND                                           |   |   |
-| 9V battery holder com terminais soldados | Digikey 708-1409-ND                                            |   |   |
-| 4 AA battery holder                      | Digikey 708-1399-ND                                            |   |   |
-| P-clamp                                  | Digikey 7624K-ND (check size)                                  |   |   |
-| Heat-shrink tubing                       | Digikey A014C-4-ND / Mouser 650-RFN100                         |   |   |
-| Barrier block (double row)               | Digikey CBB206-ND Mouser / 538-2140 ou 4140 / 538-2141 ou 4141 |   |   |
-| Barrier block jumper                     | Digikey CBB314-ND                                              |   |   |
-| D-sub connectors (9 contact)             | Digikey A31886-ND (male shell)                                 |   |   |
-| D-sub connectors (9 contact)             | Digikey A34104-ND (female shell)                               |   |   |
-| D-sub connectors (9 contact)             | Digikey A1679-ND (male pins)                                   |   |   |
-| D-sub connectors (9 contact)             | Digikey A1680-ND (female pins)                                 |   |   |
-| D-sub fixing hardware                    | Digikey MDVS22-ND (screw)                                      |   |   |
-| D-sub fixing hardware                    | Digikey MDVS44-ND (socket)                                     |   |   |
-| MIL-C-38999 connectors                   | Digikey 956-1017-ND (13 pin panel mount receptacle with pins)  |   |   |
-| MIL-C-38999 connectors                   | Digikey 956-1020-ND (13 pin plug with sockets)                 |   |   |
+|                   Peça                   |                             Número                             |
+|:----------------------------------------:|:--------------------------------------------------------------:|
+| Fio                                      | Digikey A5855W-100-ND                                          |
+| Fio                                      | Digikey C2016L-100-ND                                          |
+| Fio                                      | Digikey W120-100-ND Digikey                                    |
+| Fio                                      | Amazon “Tinned marine grade wire"                              |
+| Anel de terminais                        | Digikey A27021-ND (#6 hole)                                    |
+| Terminal                                 | Digikey A09012-ND                                              |
+| “Faston” terminal                        | Digikey 298-10011-ND                                           |
+| 9V battery holder com terminais soldados | Digikey 708-1409-ND                                            |
+| 4 AA battery holder                      | Digikey 708-1399-ND                                            |
+| P-clamp                                  | Digikey 7624K-ND (check size)                                  |
+| Heat-shrink tubing                       | Digikey A014C-4-ND/Mouser 650-RFN100                           |
+| Barrier block (double row)               | Digikey CBB206-ND Mouser/538-2140 ou 4140/538-2141 ou 4141     |
+| Barrier block jumper                     | Digikey CBB314-ND                                              |
+| D-sub connectors (9 contact)             | Digikey A31886-ND (male shell)                                 |
+| D-sub connectors (9 contact)             | Digikey A34104-ND (female shell)                               |
+| D-sub connectors (9 contact)             | Digikey A1679-ND (male pins)                                   |
+| D-sub connectors (9 contact)             | Digikey A1680-ND (female pins)                                 |
+| D-sub fixing hardware                    | Digikey MDVS22-ND (screw)                                      |
+| D-sub fixing hardware                    | Digikey MDVS44-ND (socket)                                     |
+| MIL-C-38999 connectors                   | Digikey 956-1017-ND (13 pin panel mount receptacle with pins)  |
+| MIL-C-38999 connectors                   | Digikey 956-1020-ND (13 pin plug with sockets)                 |

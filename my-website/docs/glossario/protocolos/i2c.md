@@ -10,7 +10,7 @@ sidebar_label: I2C
 O barramento de circuito integrado (I2C) é uma interface serial de dois fios desenvolvida originalmente pela Phillips Corporation no início da década de 90. Ele é utilizado para a comunicação entre dispositivos de maneira bem eficiente e rápida.
 
 ## Hardware
-O barramento I2C é composto de dois fios, chamados de SDA (Serial Data) e SCL (Serial Clock) , além de sua alimentação (VCC), típicamente de 3.3V ou 5V.
+O barramento I2C é composto de dois fios, chamados de SDA (Serial Data) e SCL (Serial Clock) , além de sua alimentação (VCC), tipicamente de 3.3V ou 5V.
 
 Este protocolo especifica dois sinais de comunicação, um com o sinal de clock - SCL (gerado pelo mestre), e outro de dados - SDA, bidirecional.
 
@@ -18,19 +18,19 @@ Os dispositivos são reconhecidos através de endereços, que podem ser de 7 bit
 
 Além disso, outro fator complicante se torna que a montagem não pode ultrapassar poucos metros de fios, pois a capacitância total máxima, em torno de 400pf, impede o funcionamento correto do barramento nessas distâncias.
 
-![img](/static/img/docs/glossario/protocolos/i2c/estrutura.png)
+![img](/img/docs/glossario/protocolos/i2c/estrutura.png)
 
 ## Como funciona a comunicação?
 No estado neutro do barramento I2C,  o valor high é mantido em ambas as linhas de comunicação. Para se iniciar a comunicação, SDA é trazido para o valor low pelo mestre. Para escrever dados no barramento, SCL pulsa, e a cada pulso, o valor em SDA é lido como um bit, começando do LSB (Least Significant Bit - Bit menos significativo).
 
 Logo após SDA ser trazida pra baixo, o mestre escreve o endereço do dispositivo que ele deseja se comunicar, por exemplo 0xC0, caso o dispositivo exista, ele responderá como um ACK (Acknowledgement - Reconhecimento), um pulso na linha SCL. Então começa a transferência de dados, o mestre escreve o endereço do registrador no escravo que ele deseja ler ou escrever (R/W) e opera então, em sequencia, podendo ler/escrever um ou mais registrador.
 
-![img](/static/img/docs/glossario/protocolos/i2c/comunicacao.png)
+![img](/img/docs/glossario/protocolos/i2c/comunicacao.png)
 
-## No Arduino: 
+## No Arduino
 Para a comunicação com o arduino, basta ligarmos a porta A5 no SCL e o A4 no SDA, como mostrado na figura abaixo:
 
-![img](/static/img/docs/glossario/protocolos/i2c/arduino_i2c.jpg)
+![img](/img/docs/glossario/protocolos/i2c/arduino_i2c.jpg)
 
 A documentação da biblioteca responsável para a comunicação I2C pode ser encontrada na descrição do [Wire.h](https://www.arduino.cc/en/reference/wire).
 
@@ -38,7 +38,7 @@ E abaixo temos um exemplo mostrando a comunicação entre Arduinos utilizando o 
 É responsável por alterar o estado do LED conectado a placa Slave quando o botao ligado a placa Master for pressionado.
 
 Código do MASTER:
-~~~c++
+~~~cpp
 #include "Wire.h"
 
 #define buttonPin 4 // numero do pino onde o botao esta conectado
@@ -105,7 +105,7 @@ void loop() {
 ~~~
 
 Código do SLAVE:
-~~~c++
+~~~cpp
 #include "Wire.h"
 
 #define ledPin 7 // numero do pino onde o LED esta conectado
