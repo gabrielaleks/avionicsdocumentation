@@ -14,7 +14,7 @@ sidebar_label: 09/08/21
 ## Feedback
 ### Carol
 - Questionou prop sobre requisito de temperatura da solenóide.
-- Estudou melhor arranjo para obtenção de 12V.
+- Estudou melhor arranjo para obtenção de 12V. Representação [neste diagrama](https://drive.google.com/file/d/1KBKzyxlANMXbrPO3WR4wuCbtDfEJysVW/view).
 
 ### Daniel
 - Começou pesquisa sobre conectores para o skib.
