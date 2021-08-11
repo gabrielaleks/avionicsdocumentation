@@ -12,7 +12,7 @@ module.exports = {
         navbar: {
             title: 'Documentação',
             logo: {
-                alt: 'My Site Logo',
+                alt: 'Logo Rockets',
                 src: 'img/rocketslogo.png',
             },
             items: [{
