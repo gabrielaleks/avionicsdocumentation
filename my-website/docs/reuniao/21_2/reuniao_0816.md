@@ -10,6 +10,7 @@ sidebar_label: 16/08/21
     - Matheus tem prova quarta e lista pra entrega no sábado
     - Gabriel tem entrega de trabalho na quinta
 - Reunião com prop para alinhamento de requisitos, que serão explicitados [neste documento](https://docs.google.com/document/d/1iduiz-AEhDjBDdYq6Et2WQ8gt9w8XqCmzj9b9u3uDWc/edit). 
+    - Trabalho no Quimera pausado nos pontos em que dependemos das respostas da prop.
 - Vídeo do marketing adiado pra próxima sprint.
 - Github agora tem integração com VS Code no browser! Agora a interação com nossa documentação tá bem mais fácil 🥳
 
@@ -30,7 +31,7 @@ sidebar_label: 16/08/21
 
 ### Matheus
 - Validou uso de RS485
-    - Próximo passo é comprar o módulo e testá-lo no envio de informações entre Arduinos.
+    - Próximo passo é comprar o módulo e testá-lo no envio de informações e comandos entre Arduinos.
 
 ## Novas tarefas
 ### Carol
@@ -40,8 +41,7 @@ sidebar_label: 16/08/21
 - Estudar como fazer fixação das câmeras.
 
 ### Fábio
-- Treinamento de Altium: montar Arduino Nano
-    - Criar libs, fazer esquemático e montar PCB.
+- Estudar sobre furos do barômetro: ver quantos furos são ideais e onde colocá-los em relação à aviônica. Qualquer dúvida sobre dimensões do foguete falar com estruturas.
 
 ### Gabriel
 - Atualizar orçamento com RS485.
