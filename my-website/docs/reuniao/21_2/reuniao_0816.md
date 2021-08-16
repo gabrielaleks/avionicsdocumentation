@@ -23,10 +23,11 @@ sidebar_label: 16/08/21
 - Escolheu conector apropriado para skibs.
 
 ### Fábio
+- Ausente.
 - Participou de reunião de alinhamento de requisitos com prop.
 
 ### Gabriel
-- Montou doc de alinhamento de requisitos com a prop
+- Montou doc de alinhamento de requisitos com a prop.
 - Participou de reunião de alinhamento de requisitos com prop.
 
 ### Matheus
