@@ -50,7 +50,7 @@ module.exports = {
                         {
                             Testes: ['aurorav2/software/testes/funcionamento', 'aurorav2/software/testes/leituraescrita'
                             ],
-                        }, 'aurorav2/software/diagramadeclasses', 'aurorav2/software/protocolodecomm'
+                        }, 'aurorav2/software/diagramadeclasses', 'aurorav2/software/protocolodecomm', 'aurorav2/software/rtos'
                     ],
                 },
             ], 
