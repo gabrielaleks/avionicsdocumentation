@@ -18,7 +18,7 @@ Os componentes da placa são:
 
 |  Componente               |      Qtd      |  Obs  |
 | -------------             |  -----------  |  ------ |
-| 40 pins flat connector    |       1       | Conector do barramento |
+| 40 pins flat connector    |       1       | Barramento principal |
 | TP4056                    |       1       | Carrega baterias |
 | Battery Holder            |       1       | - |
 | 18650 Battery             |       2       | 3.7V |
@@ -33,26 +33,26 @@ Os componentes da placa são:
 | Capacitor                 |       5       | 1x 33uF, 1x 0.22uF, 1x 0.1uF, 1x 100uF, 1x 10uF |
 
 ## Esquemático
-![img](/img/docs/aurora/hardware/eps_schem.jpg)
+![img](/img/docs/aurora/hardware/placas/eps/eps_schem.jpg)
 
 ## PCB
 ### Versão do Protótipo
-![img](/img/docs/aurora/hardware/eps_protpcb.png)
+![img](/img/docs/aurora/hardware/placas/eps/eps_protpcb.png)
 
 ### Versão Atual
-![img](/img/docs/aurora/hardware/eps_pcb.png)
+![img](/img/docs/aurora/hardware/placas/eps/eps_pcb.png)
 
 ## RBF
 O Remove Before Flight, também chamado de RBF, é um dispositivo comum no meio da aviação cuja função é manter certa parte do circuito desligado enquanto a aeronave estiver no chão. Ele é retirado apenas no último momento, quando o vôo estiver prestes a acontecer. No caso da aviônica, nós utilizamos esse dispositivo para manter toda a eletrônica embarcada desligada antes do lançamento do foguete. Isso é necessário porque há um longo período entre a montagem final do foguete e o seu lançamento, portanto devemos evitar o gasto desnecessário das baterias e previnir quaisquer falhas de acontecerem.
 
 Isso é feito da seguinte maneira: a aviônica é interna ao foguete, portanto para ligá-la é necessário algum dispositivo cuja localização seja externa. Temos para isso uma chave que fica montada na estrutura do foguete. Isso permite ligar e desligar a eletrônica embarcada após o foguete já ter sido preparado. O nome 'Remove Before Flight' indica que aquilo que chaveia o circuito é removido, e de fato muitas equipes fazem dessa maneira com algo [assim](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpYddVzTJxSCTpANgKBw8WQMHFPr7dKNnCbQ&usqp=CAU). No entanto, para o Aurora v2 nós utilizaremos uma chave comum:
 
-![img](/img/docs/aurora/hardware/rbfexternal.jpg)
+![img](/img/docs/aurora/hardware/placas/eps/rbfexternal.jpg)
 
 ### Circuito
 Como visto acima no esquemático completo, os 3v7 provenientes da bateria são enviados para dois lugares: para o regulador de tensão de 9v e para um switch. O objetivo do RBF é usar chavear os 9v, pois eles são usados por todo o restante do circuito: são usados para gerar 5v, 3v3 e usados diretamente para acionar os skibs. A chave possui 3 posições: 'on', 'off' e 'RBF'. No modo 'on' ela fecha o circuito sem ter que passar pela chave RBF externa, portanto é ideal para testes de bancada. No modo 'off' o circuito permanece desligado. No modo 'RBF' é necessário que a chave externa seja usada para fechar o circuito. Nesse caso, um conector mini-lock foi colocado para comunicar a placa com a chave, que estará na estrutura do foguete.
 
-![img](/img/docs/aurora/hardware/rbf_circuit01.jpg)
+![img](/img/docs/aurora/hardware/placas/eps/rbf_circuit01.jpg)
 
 O circuito possui dois MOSFETs: um tipo N (nMOS) e outro tipo P (pMOS), com o primeiro fazendo o drive do segundo. Isso foi feito porque a tensão de drive (3v7) é menor que a tensão de load (9v). Caso ela fosse maior, como 12v, poderia ter sido implementada uma configuração low-side com apenas um pMOS. Como esse não é o caso, um segundo MOSFET teve que ser adicionado. Ambos os tipos de MOSFET conduzem quando há um potencial grande o suficiente entre o gate e o source (chamado de Vgs). A diferença é que no nMOS esse potencial deve ser positivo, já no pMOS ele deve ser negativo. Portanto, podemos "desligar" os MOSFETs aplicando a mesma tensão no gate e no source. Quando o sinal lógico alto (3v7) é aplicado no gate do nMOS, ele puxa o gate do pMOS para um nível desejado. No caso, temos um divisor resistivo que nos dá 4.5v. Isso fecha a chave. Quando o sinal lógico é baixo (0v), tanto o gate quando o source do pMOS são 9v, portanto a chave fica aberta. 
 
@@ -60,34 +60,34 @@ O sinal lógico desse circuito são os 3v7 aplicados no gate do nMOS tanto no mo
 
 Entre o drain do nMOS e o gate do pMOS há um resistor de 10kΩ. Também nesse pino de gate há outro resistor de 10kΩ, que atua como divisor resistivo e está ligado aos 9V provenientes do regulador de tensão. Esses 9v são aplicados no source do pMOS. Já o drain dele é a tensão de load, ou seja, os 9v utilizados na alimentação do restante do circuito. Quando o sinal lógico é zero, a tensão de load também é zero. Quando é 3v7 (ou maior que a tensão de avalanche entre drain-source, que no caso do P55N06 é no máximo 2.5v), a tensão de load é 9v.
 
-![img](/img/docs/aurora/hardware/rbf_circuit02.jpg)
+![img](/img/docs/aurora/hardware/placas/eps/rbf_circuit02.jpg)
 
 O circuito completo fica dessa maneira:
 
-![img](/img/docs/aurora/hardware/rbf_circuit03.jpg)
+![img](/img/docs/aurora/hardware/placas/eps/rbf_circuit03.jpg)
 
 ### Simulação
 O circuito elaborado foi simulado para as situações de sinal lógico baixo e alto. Veja abaixo os resultados de corrente, tensão e potência.
 #### RBF off
-![img](/img/docs/aurora/hardware/eps_off.png)
+![img](/img/docs/aurora/hardware/placas/eps/eps_off.png)
 
 #### RBF on
-![img](/img/docs/aurora/hardware/eps_on.png)
+![img](/img/docs/aurora/hardware/placas/eps/eps_on.png)
 
 ### Validação do circuito
 Após a simulação do circuito e validação teórica dele nós o testamos na protoboard. O circuito foi montado na protoboard da seguinte maneira:
 
-![img](/img/docs/aurora/hardware/rbfteste_proto.png)
+![img](/img/docs/aurora/hardware/placas/eps/rbfteste_proto.png)
 
 A bateria de 3v7 está ligada à chave, que tem 3 pinos. Quando a chave está no posição de cima, o pino da bateria fica em curto com o pino de cima, portanto fechando o circuito. Quando a chave está na posição de baixo, a bateria não se liga a nada, portanto essa posição representa a chave aberta. Temos embaixo o MOSFET tipo n P55N06 e em cima o MOSFET tipo p IRF9540N. O fio verde representa o output do circuito. Quando a chave está fechada, ele teoricamente deveria levar 9V. Já com a chave aberta, esse fio deveria levar aproximadamente 0V.
 
 Veja abaixo o resultado do circuito experimental:
 
 #### Chave aberta
-![img](/img/docs/aurora/hardware/rbfteste_off.jpg)
+![img](/img/docs/aurora/hardware/placas/eps/rbfteste_off.jpg)
 
 #### Chave fechada
-![img](/img/docs/aurora/hardware/rbfteste_on.jpg)
+![img](/img/docs/aurora/hardware/placas/eps/rbfteste_on.jpg)
 
 Os fios que vêm da pcb são os de 9v, 3v7 e gnd.
 
@@ -97,28 +97,28 @@ Conclusão: o slide switch segue o comportamento esperado.
 Para validar o EPS antes de mandar fabricar, nós utilizamos a fresa do laboratório para fabricar um protótipo. Por limitações dos tamanhos de placas que tínhamos e da fresadora, esse protótipo tem dimensões 87x87. Abaixo estão imagens da placa após todos os componentes terem sido soldados. Obs: essa versão do EPS ainda não possuía o RBF.
 
 #### Frente
-![img](/img/docs/aurora/hardware/eps_protfront.jpeg)
+![img](/img/docs/aurora/hardware/placas/eps/eps_protfront.jpeg)
 
 #### Trás
-![img](/img/docs/aurora/hardware/eps_protback.jpeg)
+![img](/img/docs/aurora/hardware/placas/eps/eps_protback.jpeg)
 
 ### Continuidade
 Testes de continuidade foram executados na EPS buscando encontrar trilhas mal-comunicadas e planos de ground isolados. Todas as trilhas estão corretas, porém a seção de ground envolvida no regulador de 3v3 não se comunicava com o resto. Para resolver isso foi soldado um jumper. Uma via comunicando esse plano de ground foi adicionada no projeto.
 
-![img](/img/docs/aurora/hardware/eps_jumper.jpg)
+![img](/img/docs/aurora/hardware/placas/eps/eps_jumper.jpg)
 
 ### Linhas de potência
 Temos 3 linhas de potência sendo geradas no EPS a partir dos reguladores de 
 tensão: 3v3, 5v e 9v. Verificamos que elas estão de fato sendo geradas.
 
 #### 3v3
-![img](/img/docs/aurora/hardware/eps_3v3.jpg)
+![img](/img/docs/aurora/hardware/placas/eps/eps_3v3.jpg)
 
 #### 5v
-![img](/img/docs/aurora/hardware/eps_5v.jpg)
+![img](/img/docs/aurora/hardware/placas/eps/eps_5v.jpg)
 
 #### 9v
-![img](/img/docs/aurora/hardware/eps_9v.jpg)
+![img](/img/docs/aurora/hardware/placas/eps/eps_9v.jpg)
 
 ## Referências
 - [MOSFET myths and misconceptions](https://www.baldengineer.com/7-mosfet-myths-and-misconceptions-addressed.html)

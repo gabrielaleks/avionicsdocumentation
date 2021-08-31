@@ -11,19 +11,19 @@ A primeira versão da integração foi feita com as placas exportadas no formato
 
 **Todas as placas**
 
-![img](/img/docs/aurora/hardware/integracao/ecadmcad/ecadmcad1.jpeg)
+![img](/img/docs/aurora/hardware/placas/integracao/ecadmcad/ecadmcad1.jpeg)
 
 **Zoom no cubo de baixo**
 
-![img](/img/docs/aurora/hardware/integracao/ecadmcad/ecadmcad2.jpeg)
+![img](/img/docs/aurora/hardware/placas/integracao/ecadmcad/ecadmcad2.jpeg)
 
 **Zoom no cubo de cima**
 
-![img](/img/docs/aurora/hardware/integracao/ecadmcad/ecadmcad3.jpeg)
+![img](/img/docs/aurora/hardware/placas/integracao/ecadmcad/ecadmcad3.jpeg)
 
 **Problema no EPS**
 
-![img](/img/docs/aurora/hardware/integracao/ecadmcad/ecadmcad4.jpeg)
+![img](/img/docs/aurora/hardware/placas/integracao/ecadmcad/ecadmcad4.jpeg)
 
 **Observações**
 
@@ -41,13 +41,13 @@ Além disso, o modelo do GPS Featherweight foi alterado (a antena foi removida).
 ## Versão preliminar #2
 Essa versão possui todas as alterações comentadas anteriormente.
 
-![img](/img/docs/aurora/hardware/integracao/ecadmcad/ecadmcad5.JPG)
+![img](/img/docs/aurora/hardware/placas/integracao/ecadmcad/ecadmcad5.JPG)
 
 ## Versão preliminar #3
 
-![img](/img/docs/aurora/hardware/integracao/ecadmcad/ecadmcad6.jpeg)
+![img](/img/docs/aurora/hardware/placas/integracao/ecadmcad/ecadmcad6.jpeg)
 
-![img](/img/docs/aurora/hardware/integracao/ecadmcad/ecadmcad7.jpeg)
+![img](/img/docs/aurora/hardware/placas/integracao/ecadmcad/ecadmcad7.jpeg)
 
 Para as próximas versões:
 - Incluir antenas

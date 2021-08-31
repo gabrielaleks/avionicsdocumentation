@@ -21,7 +21,7 @@ Os componentes da placa são:
 
 |  Componente               |      Qtd      |  Obs  |
 | -------------             |  -----------  |  ------ |
-| 40 pins flat connector    |       1       | Conector do barramento |
+| 40 pins flat connector    |       1       | Barramento principal |
 | Teensy 3.5                |       1       | - |
 | GY-91                     |       1       | - |
 | BMP388                    |       1       | - |
@@ -35,22 +35,22 @@ Os componentes da placa são:
 
 ## Esquemático e PCB
 ### Versão do Protótipo
-![img](/img/docs/aurora/hardware/cdhs_protschem.jpg)
-![img](/img/docs/aurora/hardware/cdhs_protpcb.png)
+![img](/img/docs/aurora/hardware/placas/cdhs/cdhs_protschem.jpg)
+![img](/img/docs/aurora/hardware/placas/cdhs/cdhs_protpcb.png)
 
 ### Versão atual
-![img](/img/docs/aurora/hardware/cdhs_atualschem.jpg)
-![img](/img/docs/aurora/hardware/cdhs_atualpcb.png)
+![img](/img/docs/aurora/hardware/placas/cdhs/cdhs_atualschem.jpg)
+![img](/img/docs/aurora/hardware/placas/cdhs/cdhs_atualpcb.png)
 
 ## Testes no protótipo
 ### Componentes soldados
 Para validar o CDHS antes de mandar fabricar, nós utilizamos a fresa do laboratório para fabricar um protótipo. Por limitações dos tamanhos de placas que tínhamos e da fresadora, esse protótipo tem dimensões 87x87. Abaixo estão imagens da placa após todos os componentes terem sido soldados.
 
 #### Frente
-![img](/img/docs/aurora/hardware/cdhs_protfront.jpeg)
+![img](/img/docs/aurora/hardware/placas/cdhs/cdhs_protfront.jpeg)
 
 #### Trás
-![img](/img/docs/aurora/hardware/cdhs_protback.jpeg)
+![img](/img/docs/aurora/hardware/placas/cdhs/cdhs_protback.jpeg)
 
 ### Continuidade
 Testamos a continuidade das linhas de potência que alimentam o teensy e os sensores. Todas elas chegam corretamente Também testamos a comunicação dos planos de ground. Como são muitos grounds diferentes e corremos o risco de esquecer algum nesse teste, uma boa estratégia é apertar ctrl+shift e selecionar algum pino de ground na Board no Altium. Dessa maneira, todos os grounds ficarão destacados e podemos checá-los um a um. Nenhum problema foi encontrado nos planos de ground. Além disso, foi testada a continuidade para os pinos de sinal. Todos eles estão corretos. 

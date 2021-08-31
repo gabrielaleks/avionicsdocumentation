@@ -28,9 +28,11 @@ module.exports = {
                     Hardware: [
                         {
                             Placas: ['aurorav2/hardware/placas/eps', 'aurorav2/hardware/placas/cdhs',
-                                     'aurorav2/hardware/placas/rec', 'aurorav2/hardware/placas/cam',
+                                     'aurorav2/hardware/placas/rec', 'aurorav2/hardware/placas/cotsa',
+                                     'aurorav2/hardware/placas/cotsb', 'aurorav2/hardware/placas/cam',
                                 {
-                                    Integração: ['aurorav2/hardware/placas/integracao/epscdhs',
+                                    Integração: ['aurorav2/hardware/placas/integracao/diagramas',
+                                                 'aurorav2/hardware/placas/integracao/epscdhs',
                                                  'aurorav2/hardware/placas/integracao/ecadmcad'
                                 ]
                                 } 

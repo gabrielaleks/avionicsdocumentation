@@ -6,7 +6,7 @@ sidebar_label: CAM
 
 Usamos duas câmeras Quelima SQ12 Mini no foguete, uma apontando para cima e outra para baixo. Nesta página temos um breve estudo sobre as capacidades dessa câmera, como operá-la, o resultado de alguns testes feitos e como podemos fazer para integrá-la ao foguete.
 
-![img](/img/docs/aurora/hardware/cams.jpg)
+![img](/img/docs/aurora/hardware/placas/cam/cams.jpg)
 
 ## Usando a Câmera
 A SQ12 possui:
@@ -21,6 +21,8 @@ Suas características:
 - Tira fotos com 12MP com resolução de 4032x3024
 - É compatível com um cartão de até 32GB
 - Ângulo de visão da lente: 155 graus
+- Suas dimensões são: (L x W x H): 14,00 x 9,00 x 6,00 cm / 5,51 x 3,54 x 2,36 polegadas
+- Peso: 0,0160 kg
 
 Quando a câmera está carregada, pressionar o botão de on/off a liga e o LED fica permanentemente azul. Isso indica que no modo standby. Ligar a câmera descarregada ou sem o cartão microSD fará os LEDs azul e vermelho piscarem simultaneamente por 5 segundos e depois apagarem. 
 
@@ -36,15 +38,15 @@ A ativação do modo de detecção de movimento pode ser feita em 720p e em 1080
 
 Parte interna da câmera:
 
-![img](/img/docs/aurora/hardware/camopen1.jpg)
+![img](/img/docs/aurora/hardware/placas/cam/camopen1.jpg)
 
-![img](/img/docs/aurora/hardware/camopen2.jpg)
+![img](/img/docs/aurora/hardware/placas/cam/camopen2.jpg)
 
 A bateria interna da câmera é uma LiPo, logo varia de 4.2V (completamente carregada) a 2.7V (completamente descarregada). Sua capacidade é de 200mAh. A tensão para carga é de 5V.
 ## Testes
 Pra diferenciar, uma das câmeras é chamada de preta e a outra de branca (essa é a que tem uma faixa branca de adesivo embaixo dos botões)
 
-### Tempo Gravando
+### Tempo de Gravação
 - Teste 1-branca (720p): 40min
 - Teste 2-branca (1080p): 8min
 - Teste 1-preta (720p): 35min
@@ -68,19 +70,22 @@ A ideia é colocarmos duas baterias em paralelo, dobrando a corrente fornecida. 
 <iframe src="https://drive.google.com/file/d/19KBzzOv6EgZHda-dK3Szl28xCJ_rxRMJ/preview" width="100%" height="480" allowfullscreen="allowfullscreen"></iframe>
 
 #### Foto
-![img](/img/docs/aurora/hardware/cam_pic.jpg)
+![img](/img/docs/aurora/hardware/placas/cam/cam_pic.jpg)
 
 ## Integração no Foguete
 [Em Progresso]
 
 A ideia é prender as câmeras no foguete de maneira que uma esteja apontando pra cima e outra pra baixo. Uma placa com baterias fará o fornecimento de energia para as duas durante o vôo. Como a gravação é iniciada apenas com o aperto do botão de on/off, devemos começar a gravação imediatamente antes do foguete ser lançado.
 
+## Placa
+
 A placa das câmeras, ou CAM, terá duas baterias 18650 em paralelo e um TP4056 utilizado para recarregá-las sem removê-las do circuito. Terá também dois conectores mini-lock usados para alimentar as câmeras.
 
-![img](/img/docs/aurora/hardware/cam_schem.jpg)
+### Esquemático
+![img](/img/docs/aurora/hardware/placas/cam/cam_schem.jpg)
 
-![img](/img/docs/aurora/hardware/cam_board.png)
-
+### PCB
+![img](/img/docs/aurora/hardware/placas/cam/cam_board.png)
 
 ## Referências
 - https://www.youtube.com/watch?v=pFxlfeo9nwk&ab_channel=LGyn
