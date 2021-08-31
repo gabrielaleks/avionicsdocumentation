@@ -30,6 +30,11 @@ _*Este requisito deve ser confirmado. Devemos fazer um estudo de casos alternati
 ![img](/img/docs/aurora/hardware/placas/rec/rec_pcb_oficial.png)
 
 ## Simulações
+### Skibs em paralelo
+![img](/img/docs/aurora/hardware/placas/rec/rec_sim_parallel.jpg)
+
+### Skibs em série
+![img](/img/docs/aurora/hardware/placas/rec/rec_sim_series.jpg)
 
 ## Testes
 ### Protoboard

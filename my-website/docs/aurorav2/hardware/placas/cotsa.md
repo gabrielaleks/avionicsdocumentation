@@ -26,3 +26,4 @@ São 8 bornes, 4 para cada altímetro. Os bornes de RBF recebem o sinal pelo con
 ![img](/img/docs/aurora/hardware/placas/cotsa/cotsa_pcb.png)
 
 ## Wiring
+![img](/img/docs/aurora/hardware/placas/cotsa/cotsa_wiring.png)
