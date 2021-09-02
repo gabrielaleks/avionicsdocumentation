@@ -49,6 +49,11 @@ Isso é feito da seguinte maneira: a aviônica é interna ao foguete, portanto p
 
 ![img](/img/docs/aurora/hardware/placas/eps/rbfexternal.jpg)
 
+Dimensões da chave:
+- Diâmetro da fechadura: 1.5 cm
+- Comprimento total: 2.3 cm
+- Diâmetro da rosca: 1 cm
+
 ### Circuito
 Como visto acima no esquemático completo, os 3v7 provenientes da bateria são enviados para dois lugares: para o regulador de tensão de 9v e para um switch. O objetivo do RBF é usar chavear os 9v, pois eles são usados por todo o restante do circuito: são usados para gerar 5v, 3v3 e usados diretamente para acionar os skibs. A chave possui 3 posições: 'on', 'off' e 'RBF'. No modo 'on' ela fecha o circuito sem ter que passar pela chave RBF externa, portanto é ideal para testes de bancada. No modo 'off' o circuito permanece desligado. No modo 'RBF' é necessário que a chave externa seja usada para fechar o circuito. Nesse caso, um conector mini-lock foi colocado para comunicar a placa com a chave, que estará na estrutura do foguete.
 

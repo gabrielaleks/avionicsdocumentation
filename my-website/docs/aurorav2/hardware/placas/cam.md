@@ -21,7 +21,8 @@ Suas características:
 - Tira fotos com 12MP com resolução de 4032x3024
 - É compatível com um cartão de até 32GB
 - Ângulo de visão da lente: 155 graus
-- Suas dimensões são: (L x W x H): 14,00 x 9,00 x 6,00 cm / 5,51 x 3,54 x 2,36 polegadas
+- Dimensões da câmera: (L x W x H): 2.2 x 2.24 x 2.2 cm
+- Diâmetro da lente: 1.2 cm
 - Peso: 0,0160 kg
 
 Quando a câmera está carregada, pressionar o botão de on/off a liga e o LED fica permanentemente azul. Isso indica que no modo standby. Ligar a câmera descarregada ou sem o cartão microSD fará os LEDs azul e vermelho piscarem simultaneamente por 5 segundos e depois apagarem. 
