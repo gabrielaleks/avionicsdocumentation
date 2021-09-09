@@ -12,7 +12,8 @@ module.exports = {
                              'reuniao/21_1/0526r', 'reuniao/21_1/0602r', 'reuniao/21_1/0609r'
                     ],
                     '2021.2': ['reuniao/21_2/0713r', 'reuniao/21_2/0719r', 'reuniao/21_2/0726r', 'reuniao/21_2/0802r',
-                               'reuniao/21_2/0809r', 'reuniao/21_2/0816r', 'reuniao/21_2/0823r', 'reuniao/21_2/0902r'
+                               'reuniao/21_2/0809r', 'reuniao/21_2/0816r', 'reuniao/21_2/0823r', 'reuniao/21_2/0902r',
+                               'reuniao/21_2/0909r'
                     ]    
                 },
             ],
