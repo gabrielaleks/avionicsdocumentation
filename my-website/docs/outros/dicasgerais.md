@@ -1,7 +1,7 @@
 ---
 id: dicasgerais
-title: Dicas
-sidebar_label: Dicas
+title: Dicas gerais
+sidebar_label: Dicas gerais
 ---
 
 ## Altium

@@ -43,9 +43,6 @@ module.exports = {
                         {
                             Altium: ['aurorav2/hardware/altium/tutorial', 'aurorav2/hardware/altium/drc'],
                         },
-                        {
-                            Fresadora: ['aurorav2/hardware/fresadora/dicas'],
-                        },
                         'aurorav2/hardware/consumo', 'aurorav2/hardware/barramento'
                     ],
                 },
@@ -102,7 +99,7 @@ module.exports = {
         },
         {
             Outros: [
-                'outros/dicasgerais', 'outros/ideias', 'outros/inventario', 'outros/styleguide'
+                'outros/fresadora', 'outros/dicasgerais', 'outros/ideias', 'outros/inventario', 'outros/styleguide'
             ],
         }
     ],

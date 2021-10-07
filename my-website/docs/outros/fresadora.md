@@ -1,10 +1,17 @@
 ---
-id: dicas
+id: fresadora
 title: Uso da Fresadora PCB-Proto
 sidebar_label: Uso da Fresadora PCB-Proto
 ---
 
 *Autor: Daniel Relva | Originalmente escrito em 31/08/20* 
+
+## Programas
+Além do Altium, dois softwares são utilizados no processo de prototipagem: 
+- PCB Proto Studio: Utilizado para gerar, a partir dos arquivos gerados no Altium, os arquivos que serão lidos pela fresadora.
+- PCB Proto Interface: Utilizado para comandar a fresadora.
+
+Os dois podem ser encontrados [aqui](https://drive.google.com/drive/folders/1GY1ISUg-SnS6vbzS-CC62xDb-ym06xY9).
 
 ## Índice
 1) Roteiro (seguindo as orientações do fabricante)
